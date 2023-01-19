@@ -33,7 +33,6 @@ btnSearch.addEventListener('click', e => {
     });
   }
 });
-
 btnLoadMore.addEventListener('click', () => {
   pageNumber++;
   const trimmedValue = input.value.trim();
@@ -52,7 +51,6 @@ btnLoadMore.addEventListener('click', () => {
     }
   });
 });
-
 function renderImageList(images) {
   console.log(images, 'images');
   const markup = images
@@ -79,7 +77,6 @@ function renderImageList(images) {
     .join('');
   gallery.innerHTML += markup;
 }
-
 function cleanGallery() {
   gallery.innerHTML = '';
   pageNumber = 1;
